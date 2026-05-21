@@ -40,7 +40,24 @@ namespace this_keyword
             student std = new student(stdid,stdname);
             std.display();
 
-
+            Console.WriteLine();
+            Console.WriteLine("Enter number of students :");
+            int n=int.Parse(Console.ReadLine());
+            students[] stds=new students[n];
+            for(int i=0;i<stds.Length;i++)
+            {
+                Console.WriteLine("\n Enter Student Details :");
+                Console.WriteLine("Enter student id :");
+                int id=int.Parse(Console.ReadLine());
+                Console.WriteLine("Enter Student name :");
+                string name=Console.ReadLine();
+                stds[i] =new students(id,name);
+            }
+            for(int i=0; i<stds.Length;i++)
+            {
+                Console.WriteLine("student details :");
+                stds[i].display();
+            }
 
         }
     }
