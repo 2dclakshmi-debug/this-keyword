@@ -57,7 +57,31 @@ namespace this_keyword
             {
                 Console.WriteLine("student details :");
                 stds[i].display();
+                Console.WriteLine();
             }
+
+            Console.WriteLine();
+            Console.WriteLine("Enter number of employees :");
+            int num=Convert.ToInt32(Console.ReadLine());
+            employeearray[] emp=new employeearray[num];
+            for(int i=0;i<emp.Length ; i++)
+            {
+                Console.WriteLine("\n Enter Employee Details :");
+                Console.WriteLine("Enter Employee id :");
+               int eid=int.Parse(Console.ReadLine());
+                Console.WriteLine("Enter Employee name :");
+                string ename = Console.ReadLine();
+                Console.WriteLine("Enter Employee salary:");
+                double esal = double.Parse(Console.ReadLine());
+
+                emp[i]=new employeearray(eid,ename,esal);
+            }
+            for(int i=1;i<emp.Length; i++)
+            {
+                Console.WriteLine("Employee Details :");
+                emp[i].display1();
+            }
+
 
         }
     }
