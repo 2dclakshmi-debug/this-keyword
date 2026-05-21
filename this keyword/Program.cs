@@ -64,9 +64,10 @@ namespace this_keyword
             Console.WriteLine("Enter number of employees :");
             int num=Convert.ToInt32(Console.ReadLine());
             employeearray[] emp=new employeearray[num];
-            for(int i=0;i<emp.Length ; i++)
+            Console.WriteLine("\n Enter Employee Details :");
+            for (int i=0;i<emp.Length ; i++)
             {
-                Console.WriteLine("\n Enter Employee Details :");
+                
                 Console.WriteLine("Enter Employee id :");
                int eid=int.Parse(Console.ReadLine());
                 Console.WriteLine("Enter Employee name :");
