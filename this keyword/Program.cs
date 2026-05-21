@@ -27,6 +27,15 @@ namespace this_keyword
         {
             newClass nc=new newClass(10,20);
             nc.Add();
+            Console.WriteLine();
+
+            Console.WriteLine("Student details :");
+            Console.WriteLine("-----------------");
+            student std = new student(11, "Ravi");
+            std.display();
+
+
+
         }
     }
 }
