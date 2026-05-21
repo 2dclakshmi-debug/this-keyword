@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Principal;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -31,7 +32,12 @@ namespace this_keyword
 
             Console.WriteLine("Student details :");
             Console.WriteLine("-----------------");
-            student std = new student(11, "Ravi");
+            Console.WriteLine("Enter student id :"); 
+            int stdid = int.Parse(Console.ReadLine());
+            Console.WriteLine("Enter student name :"); 
+             string stdname = Console.ReadLine();
+
+            student std = new student(stdid,stdname);
             std.display();
 
 

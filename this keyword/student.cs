@@ -14,11 +14,12 @@ namespace this_keyword
         {
             this.stdid = stdid;
             this.stdname = stdname;
+           
         }
         public void display()
         {
             Console.WriteLine("student id :" + stdid);
-            Console.WriteLine("Student name :"+stdname);
+            Console.WriteLine("Student name :" + stdname);
         }
 
     }
